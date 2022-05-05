@@ -26,6 +26,9 @@
 \usepackage[natbibapa]{apacite}
 % Smaller font size for captions
 \usepackage[font=small,labelfont=bf]{caption}
+% Table related packages
+\usepackage{booktabs}
+
 
 \geometry{
  a4paper,
@@ -169,11 +172,88 @@ Da es sich bei der übergeordneten Forschungsfrage um eine Fragestellung mit exp
 	\caption{DSR Modell nach Peffers ~\citep{K.Peffers.2007}}
 \end{figure}
 
-Bei diesem Modell gibt es mehrere Einstiegsmöglichkeiten (siehe \textit{Possible Research Entry Points}). Der Einstiegspunkt für die vorliegende Arbeit bildet der Punkt Problem-Centered Initiation. Das Problem, welches gelöst werden soll, ist die die starre Natur bestehender Corona Dashboards. Diese Dashboards lassen nach \textbf{der Erstellung für die angesprochene Zielgruppe} nicht mehr anpassen oder personalisieren. In diesem Kontext ist die Entwicklung eines Prototyps interessant, welcher die Erstellung der Dashboards \textbf{in die Hände der Zielgruppe selbst legt} und so auch personalisierungs- und Anpassungsmöglichkeiten bietet. Dies bildet somit bereits die Grundlage für den ersten Schritt des Models \textit{Identify Problem & Motivation}. Im zweiten Schritt \textit{Define Objective of a Solution} geht es darum, das Ziel einer möglichen Lösung aufzuzeigen. Anschliessend geht es im Schritt \textit{Design und Development} um die eigentliche Erstellung des Artefakts, was im Zuge dieser Arbeit ein High Fidelity Prototyp darstellt. Anschliessend würde es in den nächsten Schritten noch um die Evaluation des erstellten Prototyps, sowie die Publikation der Ergebnisse gehen. Jedoch ist das Ziel dieser Arbeit die Erstellung eines Prototyps aufgrund teilstrukturierter Interviews mit Millennials. Die eigentliche Evaluation des Prototyps kann im Rahmen einer weiterführenden Arbeit angegangen werden.
+Bei diesem Modell gibt es mehrere Einstiegsmöglichkeiten (siehe \textit{Possible Research Entry Points}). Der Einstiegspunkt für die vorliegende Arbeit bildet der Punkt Problem-Centered Initiation. Das Problem, welches gelöst werden soll, ist die die starre Natur bestehender Corona Dashboards. Diese Dashboards lassen nach \textbf{der Erstellung für die angesprochene Zielgruppe} nicht mehr anpassen oder personalisieren. In diesem Kontext ist die Entwicklung eines Prototyps interessant, welcher die Erstellung der Dashboards \textbf{in die Hände der Zielgruppe selbst legt} und so auch personalisierungs- und Anpassungsmöglichkeiten bietet. Dies bildet somit bereits die Grundlage für den ersten Schritt des Models \textit{Identify Problem und Motivation}. Im zweiten Schritt \textit{Define Objective of a Solution} geht es darum, das Ziel einer möglichen Lösung aufzuzeigen. Anschliessend geht es im Schritt \textit{Design und Development} um die eigentliche Erstellung des Artefakts, was im Zuge dieser Arbeit ein High Fidelity Prototyp darstellt. Anschliessend würde es in den nächsten Schritten noch um die Evaluation des erstellten Prototyps, sowie die Publikation der Ergebnisse gehen. Jedoch ist das Ziel dieser Arbeit die Erstellung eines Prototyps aufgrund teilstrukturierter Interviews mit Millennials. Die eigentliche Evaluation des Prototyps kann im Rahmen einer weiterführenden Arbeit angegangen werden.
 
 \clearpage
 \subsection{Vorgehen}
-Eine mögliche Art der Personalisierung von Dashboards besteht darin, von einem be-stehenden Katalog von Visualisierungen (Liniendiagramme welche Corona Fallzahlen darstellen etc.) seine gewünschten Favoriten auszuwählen und diese frei auf dem Dashboard zu platzieren. In einem ersten Schritt soll daher evaluiert werden, welche Corona Visualisierun-gen für Millennials von hoher Relevanz sind. Die Basis hierfür bildet die Studie von Zhang, welche eine Vielzahl von Corona Datenvisualisierungen untersuchte und die häufigsten Visualisierungsarten aus den verschiedenen Kategorien (Nachrichtentypen) analysierte ~\citep{YixuanZhang.}. In einem ersten Schritt werden Millennials dazu befragt, welche Visualisierungsart aufgrund des Nachrichtentyp Sie auf ihrem Corona Dashboard platzieren würden. Anschliessend wird Ihnen eine Auswahl von entsprechenden Visualisierungen aufgrund des zuvor gewählten Nachrichtentyps gezeigt, wovon Sie die passendste Visualisierung auswählen. Somit kann am Schluss ausgewertet werden, welche Visualisierung am relevantesten sind und die unter-geordnete Forschungsfrage I beantwortet werden. Eine entsprechende Auflistung mit den Nachrichtenkategorien und den dazugehörigen Visualisierungstypen kann dem Anhang entnommen werden (siehe Tabelle 2 im Anhang). Die entsprechenden Links zu den Visualisierungen können dem erstellten Codebook von Zhang entnommen werden ~\citep{YixuanZhang.2021}.\\
+Eine mögliche Art der Personalisierung von Dashboards besteht darin, von einem bestehenden Katalog von Visualisierungen (Liniendiagramme welche Corona Fallzahlen darstellen etc.) seine gewünschten Favoriten auszuwählen und diese frei auf dem Dashboard zu platzieren. In einem ersten Schritt soll daher evaluiert werden, welche Corona Visualisierun-gen für Millennials von hoher Relevanz sind. Die Basis hierfür bildet die Studie von Zhang, welche eine Vielzahl von Corona Datenvisualisierungen untersuchte und die häufigsten Visualisierungsarten aus den verschiedenen Kategorien (Nachrichtentypen) analysierte ~\citep{YixuanZhang.}. In einem ersten Schritt werden Millennials dazu befragt, welche Visualisierungsart (gemäss Studie von Zhang) aufgrund des Nachrichtentyp Sie auf ihrem Corona Dashboard platzieren würden. Die entsprechenden Links zu den Visualisierungen können dem erstellten Codebook von Zhang entnommen werden ~\citep{YixuanZhang.2021}. Konkret werden hierzu folgende Nachrichtenkategorien evaluiert:\\
+
+\textbf{Über den Schweregrad der Pandemie Informieren (\textit{Informing of the Severity})}\\
+Gemäss Zhang gibt es in dieser Kategorie drei relevante Vertreter. \textit{Temporale Visualisierungen} zeigen den zeitlichen Verlauf von einer bestimmten Variable (Infektionszahlen) auf. Hierbei wurden bevorzugt Liniendiagramme, Balkendiagramme sowie Flächendiagramme verwendet (siehe Abbildung 2)
+\begin{figure}[ht]
+	\includegraphics[width=12cm]{images/temporal_visualizations.png}
+	\centering
+	\caption{Temporale Visualisierungen gemäss Zhang ~\citep[S. 7]{YixuanZhang.}}
+\end{figure}
+
+\clearpage
+\textit{Geospatial Visualisierungen} visualisieren den Einfluss auf ein bestimmtes Gebiet oder eine Region. Hierbei wurden bevorzugt Chleropleth Maps verwendet (siehe Abbildung 3).
+
+\begin{figure}[ht]
+	\includegraphics[width=12cm]{images/geospatial_visualizations.png}
+	\centering
+	\caption{Geospatial Visualisierungen gemäss Zhang ~\citep[S. 8]{YixuanZhang.}}
+\end{figure}
+
+Die dritte Kategorie, welche von Zhang identifiziert wurde, ist der \textit{Vergleich mit historischen Events}. Hierbei wurden unter anderem Infografiken verwendet (siehe Abbildung 4).
+
+
+\begin{figure}[ht]
+	\includegraphics[width=12cm]{images/historic_events_visualizations.png}
+	\centering
+	\caption{Vergleich mit historischen Events gemäss Zhang ~\citep[S. 8]{YixuanZhang.}}
+\end{figure}
+
+\clearpage
+\textbf{Vorhersage über Trends und Einflüsse (\textit{Forecasting Trends and Influences})}\\
+Visualisierungen welche eine Vorhersage über Trends und Einflüsse aufzeigen wollen, nutzten zur Veranschaulichung des Unsicherheitsfaktors farbliche Kodierungen (siehe Abbildung 5)
+
+\begin{figure}[ht]
+	\includegraphics[width=12cm]{images/forecasting_visualizations.png}
+	\centering
+	\caption{Vorhersage über Trends und Einflüsse gemäss Zhang ~\citep[S. 11]{YixuanZhang.}}
+\end{figure}
+
+\textbf{Natur der Krise beschreiben (\textit{Explaining the Nature of the Crisis})}\\
+In dieser Kategorie siedeln sich mehrheitlich von medizinischem Fachpersonal veröffentlichte Infografiken sowie 3D-Simulationen an (siehe Abbildung 6).
+
+\begin{figure}[ht]
+	\includegraphics[width=12cm]{images/nature_of_crisis_visualizations.png}
+	\centering
+	\caption{Natur der Krise beschreiben gemäss Zhang ~\citep[S. 11]{YixuanZhang.}}
+\end{figure}
+
+\textbf{Lenkung der Risikominderung (\textit{Guiding Risk Mitigation})}\\
+Im Zuge der Risikominderung wurden diverse Illustrationen erstellt. Das spezielle an diesen Illustrationen ist dass diese sehr einfach und verständlich gehalten sind. Auch werden die jeweiligen kulturellen Aspekte miteinbezogen (siehe Abbildung 7).
+
+
+\begin{figure}[ht]
+	\includegraphics[width=12cm]{images/risk_mitigation_visualizations.png}
+	\centering
+	\caption{Lenkung der Risikoverminderung gemäss Zhang ~\citep[S. 12]{YixuanZhang.}}
+\end{figure}
+
+\clearpage
+\textbf{Kommunikation von Risiken, Verletzlichkeit und Gleichberechtigung (\textit{Communicating Risk, Vulnerability and Equity})}\\
+Im Zuge dieser Kategorie wurde eine Vielzahl von unterschiedlichen Visualisierungen eingesetzt. Ein Vertreter bildet zum Beispiel eine Chloropleth Map welche den aktuellen Zustand des Gesundheitssystems in Bezug auf die Coronapandemie gemäss der Hautfarbe aufschlüsselt (siehe Abbildung 8).
+
+
+\begin{figure}[ht]
+	\includegraphics[width=12cm]{images/communicating_equity_visualizations.png}
+	\centering
+	\caption{Zustand des Gesundheitssystems nach Hautfarbe gemäss Zhang ~\citep[S. 12]{YixuanZhang.}}
+\end{figure}
+
+\textbf{Messung der vielfältigen Auswirkungen der Krise (\textit{Gauging the multifaceted Impacts of the Crisis})}\\
+Einige Vertreter dieser Kategorie bilden Liniendiagramme, welche jedoch versuchen den zeitlichen Verlauf der Krise mit bestimmten durchgeführten politischen Aktionen zu korrelieren (siehe Abbildung 9).
+
+\begin{figure}[ht]
+	\includegraphics[width=8cm]{images/measure_multifaceted_impact_visualizations.png}
+	\centering
+	\caption{Messung der vielfältigen Auswirkungen der Krise gemäss Zhang ~\citep[S. 14]{YixuanZhang.}}
+\end{figure}
+
+Somit kann am Schluss ausgewertet werden, welche Visualisierung am relevantesten sind und die untergeordnete Forschungsfrage I beantwortet werden.
 
 Um herauszufinden, welche Informationen Millennials in Zusammenhang mit Corona als relevant erachten, werden die Studierende aufgefordert 3 unterschiedliche Corona Dashboards zu besuchen und sich durch die entsprechende Navigation zu klicken. Währenddessen werden die Gedanken der Person mit Hilfe des thinking aloud Ansatzes festgehalten. Zum Schluss wird die Person über die relevantesten Informationen, welche Sie auf der Seite angetroffen hat, befragt (\textit{Welche Informationen waren für dich von besonderer Relevanz und warum?}). Somit kann mit Hilfe von bestehenden Corona Dashboards und dem thinking aloud Ansatz die untergeordnete Fragestellung 2 beantwortet werden.\\
 
@@ -220,11 +300,56 @@ Die Arbeit orientiert sich wie bereits erwähnt an den ersten drei Phasen des DS
 Die Coronavirus-Pandemie greift seit ihrem Aufkommen im Jahr 2019 in eine Vielzahl von Lebensbereichen ein. Es ist wenig verwunderlich, dass zu einem solch einschnei-dendem Thema eine grosse Anzahl von wissenschaftlichen Publikationen erstellt worden sind. Eine Publikation untersuchte die Vielzahl von Corona Datenvisualisierungen und weist ihnen verschiedene Arten von Intentionen (Aussage über den Verlauf der Pandemie etc.) zu ~\citep{YixuanZhang.}. Weitere Quellen untersuchten speziell für das Web zugeschnittene Corona Dashboards und leiteten daraus Design Guidelines ab ~\citep{Ivankovic.2021}. Andere Studien wiederum haben sich mit der Erstellung von Dashboards für spezielle Nutzergruppen auseinandergesetzt ~\citep{Ivanov.2018}. Auch wurde bereits im Zuge einer Studie die Schwierigkeiten bei der Erstellung von Corona Dashboards aus dem Blickwinkel der eigentlichen Ersteller evaluiert ~\citep{Barbazza.}. Jedoch scheint es zum jetzigen Zeitpunkt noch keine Studie zu geben, welche die Erstellung von \textbf{personalisierbaren} Corona Dashboards für eine bestimmte Zielgruppe behandelt unter Berücksichtigung eines Nutzerzentrierten Vorgehens untersucht.
 
 \clearpage
+\bibliographystyle{apacite}
+\urlstyle{rm}
+\bibliography{main.bib}
+
+\clearpage
 \section*{Anhang}
-\subsection*{Rechercheprotokoll}
+\begin{table}[ht]
+\begin{tabular}{@{}p{4cm}p{4cm}p{6.5cm}@{}}
+\toprule
+\textbf{Quelle}                                          & \textbf{Schlüsselwörter}        & \textbf{Artikel} \\ \midrule
+\url{https:\\scholar.google.com}                         & covid dashboard                 & ~\citep{Dong.2020}         \\ \midrule
+                                                         &                                 & ~\citep{Florez.2020}       \\ \midrule
+                                                         &                                 & ~\citep{Berry.2020}        \\ \midrule
+                                                         & user centered dashboards        & ~\citep{Francois.2021}     \\ \midrule
+                                                         &                                 & ~\citep{Young.2020}        \\ \midrule
+                                                         & customizable dasbhoards         & ~\citep{Roberts.2017}      \\ \midrule
+\url{https:\\dl-acm.org}                                 & covid19 dashboard               & ~\citep{Vitale.}           \\ \midrule
+                                                         & evaluating crisis dashboards    & ~\citep{Ivanov.2018}       \\ \midrule
+                                                         & data dashboards                 & ~\citep{Maheshwari.}       \\ \midrule
+                                                         &                                 & ~\citep{Beheshti.}         \\ \midrule
+\url{https:\\google.com}                                 & covid dashboard evaluation      & ~\citep{Barbazza.}         \\ \midrule
+                                                         & how user use covid19 dashboards & ~\citep{Ivankovic.2021}    \\ \bottomrule
+\end{tabular}
+\caption{\label{tab:research-protocol}Rechercheprotokoll (Eigene Darstellung)}
+\end{table}
+\clearpage
 
 
 \subsection*{Zeitplan}
+
+\begin{table}[ht]
+\begin{tabular}{@{}p{13cm}p{2cm}@{}}
+\toprule
+\textbf{Tätigkeit}                                                                                & \textbf{Stichtag} \\ \midrule
+Erstellung des Untersuchungsinstrumentes                                                          & 08.05.2022        \\ \midrule
+Kapitel Einleitung fertig stellen                                                                 & 08.05.2022        \\ \midrule
+Kapitel Problemidentifizierung und Motivation fertig stellen                                      & 15.05.2022        \\ \midrule
+Durchführung der teilstrukturierten Interviews mit Hilfe des erstellten Untersuchungsinstrumentes & 29.05.2022        \\ \midrule
+Abgabe Exposé                                                                                     & 22.05.2022        \\ \midrule
+Kapitel Identifikation der Ziele fertig stellen                                                   & 05.06.2022        \\ \midrule
+Implementierung Prototyp                                                                          & 26.06.2022        \\ \midrule
+Kapitel Design und Development fertig stellen                                                     & 26.06.2022        \\ \midrule
+Kapitel Fazit fertig stellen                                                                      & 03.07.2022        \\ \midrule
+Kapitel Reflexion und Limitation fertig stellen                                                   & 10.07.2022        \\ \midrule
+Korrekturlesung und Verbesserung                                                                  & 24.07.2022        \\ \midrule
+Abgabe Thesis                                                                                     & 25.07.2022        \\ \bottomrule
+\end{tabular}
+\caption{\label{tab:time-table}Zeitplan (Eigene Darstellung)}
+\end{table}
+
 
 \clearpage
 \section*{Eigenständigkeitserklärung}
@@ -234,10 +359,5 @@ Hiermit bestätigt der Verfasser, dass die vorliegende Arbeit selbstständig ver
 	\includegraphics[width=6cm]{images/signature.png}
 \end{figure}
 Yannick Hutter, Mels am 01. Mai 2022
-
-\clearpage
-\bibliographystyle{apacite}
-\urlstyle{rm}
-\bibliography{main.bib}
 
 \end{document}
